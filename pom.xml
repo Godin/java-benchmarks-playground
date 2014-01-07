@@ -17,7 +17,7 @@
     <dependency>
       <groupId>org.openjdk.jmh</groupId>
       <artifactId>jmh-core</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>0.2</version>
     </dependency>
 
     <dependency>
@@ -47,15 +47,6 @@
                   <mainClass>org.openjdk.jmh.Main</mainClass>
                 </transformer>
               </transformers>
-              <filters>
-                <!-- Remove annotation processor files -->
-                <filter>
-                  <artifact>oracle.micro:MicroBenchmarkAnnotationProcessor</artifact>
-                  <excludes>
-                    <exclude>*/**</exclude>
-                  </excludes>
-                </filter>
-              </filters>
             </configuration>
           </execution>
         </executions>
